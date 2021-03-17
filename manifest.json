@@ -1,0 +1,12 @@
+{
+    "name": "Gannar",
+    "version": "1.0",
+    "description": "Gannar Extension!",
+    "manifest_version": 2,
+    "content_scripts": [
+    {
+        "matches": [ "http://cgi1.plala.or.jp/~ssdi/gannar.cgi"],
+        "js": [ "script.js" ]
+    }
+    ]
+}
