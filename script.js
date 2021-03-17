@@ -53,6 +53,12 @@ h.setAttribute("value", "域");
 h.onclick = seiatsu;
 es[idx].appendChild(h);
 
+var checkbox = document.createElement("INPUT");
+checkbox.setAttribute("type", "checkbox");
+checkbox.setAttribute("name", "checkbox");
+es[idx].appendChild(checkbox);
+
+
 var k = document.createElement("INPUT");
 k.setAttribute("type", "submit");
 k.setAttribute("value", "情報");
@@ -60,34 +66,50 @@ k.onclick = jyoho;
 es[idx + 1].appendChild(k);
 
 function shoumetu(){
+    if(es[idx].checkbox.checked){
     es[idx].querySelectorAll("select")[0].value = 4;
+    }
 }
 
 function kama(){
+    if(es[idx].checkbox.checked){
     es[idx].querySelectorAll("select")[0].value = 16;
+    }
 }
 
 function muchi(){
+    if(es[idx].checkbox.checked){
     es[idx].querySelectorAll("select")[0].value = 18;
+}
 }
 
 function tuchi(){
+    if(es[idx].checkbox.checked){
     es[idx].querySelectorAll("select")[0].value = 54;
+    }
 }
 
 function kyoka(){
+    if(es[idx].checkbox.checked){
     es[idx].querySelectorAll("select")[0].value = 21;
+    }
 }
 
 function shogun(){
+    if(es[idx].checkbox.checked){
     es[idx].querySelectorAll("select")[0].value = 22;
+    }
 }
 
 function tan(){
+    if(es[idx].checkbox.checked){
     es[idx].querySelectorAll("select")[0].value = 31;
+    }
 }
 function seiatsu(){
+    if(es[idx].checkbox.checked){
     es[idx].querySelectorAll("select")[0].value = 57;
+    }
 }
 function jyoho(){
     es[idx+1].querySelectorAll("select")[0].value = 8;
